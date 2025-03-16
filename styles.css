@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    background-color: #008080; /* Classic Windows 95 desktop color */
+    background-image: url('desktop-background.jpg'); /* Add a desktop background image */
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.icon span {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #c0c0c0; /* Classic Windows taskbar color */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.start-button {
+    background-color: #808080;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.taskbar-icons {
+    display: flex;
+    margin-left: 20px;
+}
+
+.taskbar-icon {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.taskbar-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.start-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 200px;
+    background-color: #c0c0c0;
+    border: 1px solid #000;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.start-menu-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.start-menu-item:hover {
+    background-color: #808080;
+    color: white;
+}
