@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- Desktop Icons -->
+        <div class="icon" id="icon1" onclick="openApp('App 1')">
+            <img src="icon1.png" alt="App 1">
+            <span>App 1</span>
+        </div>
+        <div class="icon" id="icon2" onclick="openApp('App 2')">
+            <img src="icon2.png" alt="App 2">
+            <span>App 2</span>
+        </div>
+        <!-- Add more icons as needed -->
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="start-button" onclick="openStartMenu()">
+            Start
+        </div>
+        <div class="taskbar-icons">
+            <div class="taskbar-icon" onclick="openApp('App 1')">
+                <img src="icon1.png" alt="App 1">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('App 2')">
+                <img src="icon2.png" alt="App 2">
+            </div>
+            <!-- Add more taskbar icons as needed -->
+        </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+        <div class="start-menu-item" onclick="openApp('App 1')">App 1</div>
+        <div class="start-menu-item" onclick="openApp('App 2')">App 2</div>
+        <!-- Add more start menu items as needed -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
